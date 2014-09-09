@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<title>Socket.IO Sample</title>
+<link rel="stylesheet" type="text/css" href="css/normalize.css">
+<link rel="stylesheet" type="text/css" href="css/chat.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
+<script src="http://localhost:3000/socket.io/socket.io.js"></script>
+<script src="js/chat.js"></script>
+</head>
+<body>
+    <div class="l-main">
+
+        <h1 class="c-heading">簡単チャット</h1>
+
+        <div class="b-form">
+            <input type="text" class="js_input_data">
+            <button class="js_submit_data">送信</button>
+        </div>
+        
+
+        <div class="b-chat js_push_data"></div>
+
+        <!-- <div class="b-chat">
+            <div class="b-chat__item clearfix">
+                <p class="b-chat__text js_chat-text"></p>
+            </div>
+        </div> -->
+    </div>
+</body>
+</html>

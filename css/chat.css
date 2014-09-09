@@ -1,0 +1,73 @@
+body {
+    font-size: 10px;
+}
+.l-main {
+    margin: 10px;
+}
+.c-heading {
+    font-size: 20px;
+    border-bottom: 1px solid #000;
+    font-weight: bold;
+    padding: 0 0 5px 0;
+}
+.b-form {
+    font-size: 12px;
+    margin: 0 0 10px 0;
+}
+
+.b-chat {   
+    width: 300px;
+}
+.b-chat__text {
+    font-size: 12px;
+    float: left;
+    list-style-type: none;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    position: relative;
+    margin: 0 0 45px 0;
+    padding: 5px 10px;
+}
+.b-chat__text:before,
+.b-chat__text:after {
+    content: '';
+    background-color: #ccc;
+    position: absolute;
+}
+.b-chat__text:before {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    left: 20px;
+    bottom: -22px;
+}
+.b-chat__text:after {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    left: 30px;
+    bottom: -35px;
+}
+.b-chat__text--is-owner {
+    color: #f00;
+    clear: right;
+    float: right;
+}
+.b-chat__text--is-owner.b-chat__text:before {
+    left: auto;
+    right: 20px;
+}
+.b-chat__text--is-owner.b-chat__text:after {
+    left: auto;
+    right: 30px;
+}
+.clearfix {
+    overflow: hidden;
+}
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+}
